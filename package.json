@@ -24,6 +24,7 @@
     "url": "https://github.com/ifreddyrondon/is-prod/issues"
   },
   "homepage": "https://github.com/ifreddyrondon/is-prod#readme",
+  "engine": ">=6.7.0",
   "devDependencies": {
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.0.0",
