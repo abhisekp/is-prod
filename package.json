@@ -4,6 +4,7 @@
   "description": "Normalize the way of check if you are in a production env",
   "main": "index.js",
   "scripts": {
+    "commit": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/ifreddyrondon/is-prod/issues"
   },
-  "homepage": "https://github.com/ifreddyrondon/is-prod#readme"
+  "homepage": "https://github.com/ifreddyrondon/is-prod#readme",
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
 }
