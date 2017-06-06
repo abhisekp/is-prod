@@ -103,7 +103,7 @@ describe('is prod', () => {
     });
   });
 
-  describe('getEnv', () => {
+  describe('getNormalizedEnv', () => {
     it('return empty when NODE_ENV is not defined', () => {
       process.env.NODE_ENV = undefined;
       const result = env.getNormalizedEnv();
@@ -120,6 +120,18 @@ describe('is prod', () => {
       process.env.NODE_ENV = 'prod';
       const result = env.getNormalizedEnv();
       expect(result).to.be.equal('production');
+    });
+
+    it('return development when NODE_ENV is dev', () => {
+      process.env.NODE_ENV = 'dev';
+      const result = env.getNormalizedEnv();
+      expect(result).to.be.equal('development');
+    });
+
+    it('return test when NODE_ENV is test', () => {
+      process.env.NODE_ENV = 'test';
+      const result = env.getNormalizedEnv();
+      expect(result).to.be.equal('test');
     });
   });
 });
