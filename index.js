@@ -1,3 +1,11 @@
+
 /**
- * Created by frondon on 6/4/17.
+ * Module dependencies
  */
+const isProd = require('./lib');
+
+/**
+ * Expose Status Codes
+ */
+
+module.exports = isProd;
