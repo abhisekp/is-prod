@@ -1,6 +1,6 @@
 {
   "name": "is-prod",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Normalize the way of check if you are in a production env",
   "main": "index.js",
   "scripts": {
