@@ -32,38 +32,45 @@ if (isProd.isProduction()) {
   loggerLevel = 'debug'
 }
 
-... 
+...
 
 // log the current normalized NODE_ENV
 log.debug(isProd.getNormalizedEnv())
 
 ```
 
-## Check for production 
+## Check for production
 
 Check the NODE_ENV for **production** or **prod**.
 
     isProduction()
-    
 
-## Check for devlopment 
+## Check for development
 
-Check the NODE_ENV for **devlopment** or **dev**.
+Check the NODE_ENV for **devlopment** or **dev**.  
+If NODE_ENV is not set, then defaults to **development**.
 
     isDevelopment()
-    
-## Check for test 
+
+## Check for debug
+
+Check the NODE_ENV for **DEBUG** or **debug**.  
+Or Check for DEBUG environment variable to be set.
+
+    isDebug()
+
+## Check for test
 
 Check the NODE_ENV for **test**.
 
     isTest()
-    
+
 ## Get NODE_ENV
- 
-1) Return the value of NODE_ENV.
 
-    getEnv()
+1. Return the value of NODE_ENV.
 
-2) Return the normalized word for NODE_ENV
+   getEnv()
 
-    getNormalizedEnv()
+2. Return the normalized word for NODE_ENV
+
+   getNormalizedEnv()
