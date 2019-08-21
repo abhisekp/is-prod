@@ -14,6 +14,10 @@ describe('is prod', () => {
     process.env = realEnv;
   });
 
+  afterEach(() => {
+    process.env = realEnv;
+  });
+
   it('Should have defined specific properties', () => {
     expect(env).to.have.property('isProduction');
     expect(env).to.have.property('isDevelopment');
